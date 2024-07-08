@@ -11,3 +11,10 @@ vim.g.autoformat = false
 vim.opt.winbar = "%=%m %f"
 
 vim.opt.guicursor = "a:block,a:blinkon0"
+
+-- Indentation related
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.wrap = true
+vim.opt.linebreak = true
