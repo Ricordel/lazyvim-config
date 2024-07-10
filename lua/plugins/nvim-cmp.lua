@@ -15,7 +15,7 @@ return {
                 ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
             })
 
-            opts.completion = { completeopt = "menu,menuone,noselect" }
+            -- opts.completion = { completeopt = "menu,menuone,noselect" }
         end,
 
     }
