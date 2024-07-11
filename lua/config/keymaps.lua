@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>w", ":w<CR>", { silent = true })
 -- vim.keymap.set("n", "gT", ":BufferLineCyclePrev<CR>", { desc = "Prev tab", silent = true })
 
 vim.keymap.set("n", "<leader>qn", ":cnext<CR>", { desc = "Next quickfix", silent = true })
-vim.keymap.set("n", "<leader>qp", ":cpreviois<CR>", { desc = "Previous quickfix", silent = true })
+vim.keymap.set("n", "<leader>qp", ":cprevious<CR>", { desc = "Previous quickfix", silent = true })
 vim.keymap.set("n", "<leader>qo", ":copen<CR>", { desc = "Open quickfix", silent = true })
 vim.keymap.set("n", "<leader>qc", ":cclose<CR>", { desc = "Close quickfix", silent = true })
 
@@ -19,6 +19,10 @@ vim.keymap.set("n", "<leader>lp", ":lpreviois<CR>", { desc = "Previous location"
 vim.keymap.set("n", "<leader>lo", ":lopen<CR>", { desc = "Open location", silent = true })
 vim.keymap.set("n", "<leader>lc", ":lclose<CR>", { desc = "Close location", silent = true })
 
+vim.keymap.set({ "n", "i", "v" }, "<C-n>", ":bnext<CR>", { desc = "Next buffer", silent = true })
+vim.keymap.set({ "n", "i", "v" }, "<C-p>", ":bprevious<CR>", { desc = "Previous buffer", silent = true })
+
 -- Gimme back my L and H, you stupid bufferline!
 vim.keymap.del("n", "L")
 vim.keymap.del("n", "H")
+
