@@ -14,10 +14,10 @@ vim.keymap.set("n", "<leader>qp", ":cprevious<CR>", { desc = "Previous quickfix"
 vim.keymap.set("n", "<leader>qo", ":copen<CR>", { desc = "Open quickfix", silent = true })
 vim.keymap.set("n", "<leader>qc", ":cclose<CR>", { desc = "Close quickfix", silent = true })
 
-vim.keymap.set("n", "<leader>ln", ":lnext<CR>", { desc = "Next location", silent = true })
-vim.keymap.set("n", "<leader>lp", ":lpreviois<CR>", { desc = "Previous location", silent = true })
-vim.keymap.set("n", "<leader>lo", ":lopen<CR>", { desc = "Open location", silent = true })
-vim.keymap.set("n", "<leader>lc", ":lclose<CR>", { desc = "Close location", silent = true })
+-- vim.keymap.set("n", "<leader>ln", ":lnext<CR>", { desc = "Next location", silent = true })
+-- vim.keymap.set("n", "<leader>lp", ":lpreviois<CR>", { desc = "Previous location", silent = true })
+-- vim.keymap.set("n", "<leader>lo", ":lopen<CR>", { desc = "Open location", silent = true })
+-- vim.keymap.set("n", "<leader>lc", ":lclose<CR>", { desc = "Close location", silent = true })
 
 vim.keymap.set({ "n", "i", "v" }, "<C-n>", ":bnext<CR>", { desc = "Next buffer", silent = true })
 vim.keymap.set({ "n", "i", "v" }, "<C-p>", ":bprevious<CR>", { desc = "Previous buffer", silent = true })
