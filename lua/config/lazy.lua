@@ -14,9 +14,14 @@ require("lazy").setup({
     -- Import any extra modules here
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
-    { import = "lazyvim.plugins.extras.lang.omnisharp" },
+    -- { import = "lazyvim.plugins.extras.lang.omnisharp" },
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
+
+    -- Markdown stuff
+    { import = "lazyvim.plugins.extras.lang.markdown" },
+    { import = "lazyvim.plugins" },
+
     { import = "plugins" },
   },
   defaults = {
