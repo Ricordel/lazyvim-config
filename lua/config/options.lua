@@ -15,17 +15,9 @@ vim.opt.winbar = "%=%m %f"
 
 vim.opt.guicursor = "a:block,a:blinkon0"
 
-
 -- Indentation related
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.wrap = true
 vim.opt.linebreak = true
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown" },
-  callback = function()
-    vim.opt_local.conceallevel = 0
-  end,
-})
