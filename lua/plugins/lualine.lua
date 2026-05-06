@@ -20,6 +20,12 @@ return {
         })
 
         table.insert(opts.sections.lualine_x, 1, {
+            function() return "󰡱 " .. vim.fs.basename(vim.g._roslyn_slnf) end,
+            cond = function() return vim.g._roslyn_slnf ~= nil end,
+            color = function() return { fg = Snacks.util.color("Comment") } end,
+        })
+
+        table.insert(opts.sections.lualine_x, 1, {
             function() return " Roslyn loading…" end,
             cond = function() return roslyn_loading end,
             color = function() return { fg = Snacks.util.color("Comment") } end,
