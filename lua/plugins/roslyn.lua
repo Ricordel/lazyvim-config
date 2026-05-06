@@ -1,4 +1,4 @@
-  return {
+return {
     { "Hoffs/omnisharp-extended-lsp.nvim", enabled = false },
     {
       "mason-org/mason.nvim",
