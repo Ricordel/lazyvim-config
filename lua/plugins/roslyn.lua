@@ -23,6 +23,14 @@ return {
     "seblyng/roslyn.nvim",
     ft = "cs",
     init = function()
+      vim.lsp.config("roslyn", {
+        settings = {
+          ["csharp|background_analysis"] = {
+            dotnet_compiler_diagnostics_scope = "fullSolution",
+            dotnet_analyzer_diagnostics_scope = "openFiles",
+          },
+        },
+      })
       vim.api.nvim_create_autocmd("BufReadPost", {
         pattern = "*.slnf",
         callback = function(args)
@@ -36,12 +44,13 @@ return {
     end,
     opts = {
       lock_target = true,
+      debug = true,
       choose_target = function(targets)
         if vim.g._roslyn_slnf then
           return vim.g._roslyn_slnf
         end
         for _, t in ipairs(targets) do
-          if t:match("%.sln$") then return t end
+          if t:match("%.slnf$") then return t end
         end
         return targets[1]
       end,
