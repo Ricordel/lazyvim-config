@@ -26,3 +26,8 @@ vim.keymap.set({ "n", "i", "v" }, "<C-p>", ":bprevious<CR>", { desc = "Previous 
 vim.keymap.del("n", "L")
 vim.keymap.del("n", "H")
 
+-- CodeCompanion keymaps
+vim.keymap.set({ "n", "v" }, "<leader>cc", "<cmd>CodeCompanionChat Toggle<cr>", { desc = "Toggle CodeCompanion Chat" })
+vim.keymap.set({ "n", "v" }, "<leader>ca", "<cmd>CodeCompanionActions<cr>", { desc = "CodeCompanion Actions" })
+vim.keymap.set("v", "<leader>ci", "<cmd>CodeCompanion<cr>", { desc = "CodeCompanion Inline" })
+
